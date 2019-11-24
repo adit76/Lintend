@@ -1,0 +1,522 @@
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .navigation{
+      float: left;
+      padding: 22px 10px;
+      width: 230px;
+      background: #424242;
+      text-align: center;
+      font-family: sans-serif;
+      height: 93vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .navigation .logo img{
+        width: 80px;
+        height: 80px;
+        left: 10px;
+    }
+
+    .navigation .nav-items ul li{
+      list-style: none; 
+      font-size: 13px;
+      font-weight: bolder;
+      padding: 8px 0;
+      border-left: 1px solid transparent;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .navigation .nav-items ul li a{
+      text-decoration: none;
+      color: #848484;
+    }
+
+    .navigation .nav-items ul li:hover{
+      border-left: 1px solid #f79100;
+    }
+
+    .navigation .nav-items ul li a:hover{
+      color: #f78100;
+    }
+
+
+    .navigation .footer{
+      font-size: 12px;
+      color: #848484;
+    }
+
+    .navigation .footer span{
+      color: #216189;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .navigation .footer .social{
+      padding: 20px 0; 
+    }
+
+    .navigation .footer .social i{
+      padding: 5px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .navigation .footer .social i:hover{
+      color: #f79100 !important;
+    }
+
+    .line{
+      width: 50px;
+      height: 3px;
+      background: #f79100;
+      position: relative;
+      padding: 0;
+      margin-top: 5px;
+    }
+
+    .container{
+      position: relative;
+      width: auto;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    .container .back{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      animation: myMove 2s;
+    }
+
+    .container .back img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .container .back #card{
+      width: 500px;
+      height: 180px;
+      background: rgba(247, 145, 0, 0.8); 
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    .container .back .overflowhid{
+      overflow: hidden;
+    }
+
+    .container .back #card p{
+      padding: 10px;
+     
+    }
+
+    .container .back #card button{
+      padding: 10px;
+      margin: 20px;
+      color: white;
+      background: #3A5789;
+      border: none;
+    }
+
+    @keyframes myMove{
+      from {opacity: 0.1;}
+      to {opacity: 1;}
+    }
+
+    .section1{
+      display: flex;
+      margin: 50px 20px;
+      font-family: sans-serif;
+    }
+
+    
+
+    .section1 .image img{
+      width: 450px;
+      height: 560px;
+    }
+
+    .section1 .content{
+      padding: 0 20px;
+    }
+
+    .section1 section{
+      text-align: justify; 
+      padding: 10px 0;
+      color: #848484;
+    }
+
+    .section1 section p{
+      padding: 10px 0;
+      font-size: 17px; 
+      line-height: 25px;
+    }
+
+    .content .us{
+      display: flex;
+      justify-content: space-around;
+      padding-left: 10px;
+      margin-top: 20px;
+    }
+
+    .content .us .inner{
+      color: #848484;
+      width: 120px;
+    }
+
+    .content .us .inner hr{
+      width: 160px;
+    }
+
+    .content .us .inner i{
+      font-size: 30px;
+      z-index: 1;
+      position: absolute;
+      margin-top: -15px;
+      margin-left: -28px;
+      color: black;
+    }
+
+    .content .us .inner i:hover{
+      color: #f79100;
+    }
+
+    .content .us .inner p{
+      padding-top: 20px;
+      margin-left: -35px;
+      font-size: 16px;
+      padding-right: 5px;
+    }
+
+    .section3{
+      display: flex;
+      margin: 20px;
+      font-family: sans-serif;
+    }
+
+    .section3 .left{
+      width: 450px;
+    }
+
+    .section3 .left section{
+      padding: 30px 0;
+      font-size: 17px;
+      padding-top: 30px;
+    }
+
+    .section3 section p{
+      padding: 10px 0;
+      text-align: justify;
+      color: #848484;
+    }
+
+    .section2 .inner i{
+        font-size: 35px;
+
+      }
+
+      .section2 .inner h1{
+        padding: 10px;
+        font-size: 25px;
+      }
+
+      .section2 .inner p{
+        font-size: 12px;
+      }
+
+    .section3 .left header p{
+      font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    }
+
+    .section3 .right img{
+      width: 100%;
+      height: 320px;
+    } 
+
+    @media (max-width: 900px){
+      
+
+      .navigation{
+        visibility: hidden;
+        z-index: 999;
+        position: absolute;
+        width: 50%;
+        opacity: 0;
+      }
+
+      #card>#test1{
+        font-size: 25px !important;
+      }
+
+      .container #card button{
+        font-size: 12px !important;
+      }
+
+      .container{
+        width: 100%;
+      }
+
+      .mobile-toggle i{
+        display: block;
+       
+      }
+
+      .section1{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 20px;
+      }
+
+      .section1 .image img{
+        width: 100%;
+        height: 75%;
+      }
+
+      .section1 section {
+        text-align: justify;
+        padding: 20px 0;
+        color: #848484;
+      }
+
+      .section1 .content{
+        padding: 20px;
+      }
+
+      .section2{
+        height: 50%;
+      }
+
+      .section2 .inner i{
+        font-size: 35px;
+
+      }
+
+      .section2 .inner h1{
+        padding: 10px;
+        font-size: 25px;
+      }
+
+      .section2 .inner p{
+        font-size: 12px;
+      } 
+
+      .content .us{
+        padding-left: 35px;
+      }
+
+      .content .us .inner i{
+        background: white;
+      }
+
+      .content .us .inner hr{
+        width: 100%;
+      }
+
+      .content .us .inner p{
+        font-size: 16px;
+        padding-right: 30px;
+      }
+
+      .section3{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section3 .left {
+        width: 100%;
+      }
+
+      .container .w3-content>button{
+        z-index: 1;
+      }
+
+      .container .w3-content>button{
+        top: 42%;
+      }
+
+
+  }
+
+    
+
+    
+
+
+  </style>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+      <div class="logo">
+        <img src="logo1.png">
+        <h2 style="color: white;">LINTEND</h2>
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a href="index.html" >HOME</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li style="border-left: 1px solid #f79100;"><a href="about.html" style="color: #f79100;">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="gallery.html">LIFE AT LINTEND</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy;2018. All Rights Reserved.</p>
+        <p>Designed by <span>Lintend</span> </p>
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-toggle" onclic>
+      <i class="fas fa-bars" onclick="mobNav()"></i>
+    </div>
+
+    <div class="container">
+
+      <div class="section1">
+          <div class="image">
+            <img src="tower.jpg">
+          </div>
+          <div class="content">
+              <header>
+                <p style="color: #848484; font-size: 13px;">Welcome</p>
+                <p style="font-size: 20px; font-weight: bold; padding: 10px 0; letter-spacing: 3px;">WHO WE ARE</p>
+                <div class="line"></div>
+              </header>
+              <section>
+                <p>Lintend was established in 2018 with an aim of empowering business hub. enterprises and digitization of business. The area of our services include website
+                designing. responsive and useroiriendly mobile applications development, Search Engine Optimization (SEO). 8qu SMS Services. Graphic Designing and Digital
+                Marketing. We are solely driven to address the needs of our client to achieve their ultimate goals and offer related suggestion and feedback.</p>
+
+                <p>We are a group of motivated. valuebased. result-driven and process-oriented team members. Our culture is driven by our core values that pushes us to act With
+                integrity and conduct business with honesty. Our Team consists of dedicated. skilled and experienced developers. Ul/UX Designers, Project Managers. Quality
+                Analyst (QA) and Technicians. We are used to work in an extreme and challenging environment to provide usenfriendly. engineered and high~quallty end
+                products.</p>
+              </section>
+              <div class="us">
+                <div class="inner">
+                  <i class="far fa-check-circle"></i>
+                  <hr>
+                  <p>We Are Passionate</p>
+                </div>
+                <div class="inner">
+                  <i class="far fa-check-circle"></i>
+                  <hr>
+                  <p>Honest and Dependable</p>
+                </div>
+                <div class="inner">
+                  <i class="far fa-check-circle"></i>
+                  <hr>
+                  <p>Always Improving</p>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="section2">
+        <div class="container-fluid">
+          <div class="inner">
+            <i class="far fa-building"></i>
+            <h1>10</h1>
+            <p>Projects</p>
+          </div>
+          <div class="inner">
+            <i class="far fa-address-card"></i>
+            <h1>7</h1>
+            <p>Employees</p>
+          </div>
+          <div class="inner">
+            <i class="fas fa-users"></i>
+            <h1>15</h1>
+            <p>Clients</p>
+          </div>
+          <div class="inner">
+            <i class="fas fa-handshake"></i>
+            <h1>3</h1>
+            <p>Partners</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section3">
+        <div class="left">
+          <header>
+                <p>HISTORY</p>
+                <div class="line"></div>
+          </header>
+
+          <section>
+            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country</p>
+
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          </section>
+        </div>
+
+
+        <div class="right">
+          
+            <img src="history.png">
+          
+
+        </div>
+      </div> 
+
+      
+      
+    </div>
+
+    <script>
+        var a = document.getElementsByClassName('navigation')[0];
+
+    function mobNav(){
+      if(a.style.visibility != "visible"){
+      a.style.visibility = "visible";
+      a.style.opacity = 1;
+    }
+      else{
+        a.style.visibility = "hidden";
+        a.style.opacity = 0;
+      }
+    }
+      
+
+    </script>
+  
+
+  </body>
+
+</html>

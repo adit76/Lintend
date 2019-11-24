@@ -1,0 +1,351 @@
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .navigation{
+      float: left;
+      padding: 22px 10px;
+      width: 230px;
+      background: #424242;
+      text-align: center;
+      font-family: sans-serif;
+      height: 93vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+      transition: 0.5s ease;
+    }
+
+    .navigation .logo img{
+        width: 80px;
+        height: 80px;
+        left: 10px;
+    }
+
+    .navigation .nav-items ul li{
+      list-style: none; 
+      font-size: 13px;
+      font-weight: bolder;
+      padding: 8px 0;
+      border-left: 1px solid transparent;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .navigation .nav-items ul li a{
+      text-decoration: none;
+      color: #848484;
+    }
+
+    .navigation .nav-items ul li:hover{
+      border-left: 1px solid #f79100;
+    }
+
+    .navigation .nav-items ul li a:hover{
+      color: #f78100;
+    }
+
+
+    .navigation .footer{
+      font-size: 12px;
+      color: #848484;
+    }
+
+    .navigation .footer span{
+      color: #216189;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .navigation .footer .social{
+      padding: 20px 0; 
+    }
+
+    .navigation .footer .social i{
+      padding: 5px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .navigation .footer .social i:hover{
+      color: #f79100 !important;
+    }
+
+    .container{
+      position: relative;
+      width: auto;
+      height: 100vh;
+      overflow: auto;
+      padding: 0 20px; 
+    }
+
+    .container .back{
+      width: 100%;
+      height: 100%;
+    }
+
+    .container .inner{
+      padding: 20px;
+    }
+
+    .container .header{
+      font-size: 25px;
+      font-weight: bold;
+      padding: 50px 0;
+    }
+
+     .line{
+      width: 50px;
+      height: 3px;
+      background: #f79100;
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container .form{
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+
+    .container .form .left .items{
+      display: flex;
+      border: 5px solid #F7F7F7;
+      margin: 30px 0;
+      width: 400px;
+    }
+
+    .container .form .left .items i{
+      padding: 10px 20px;
+      font-size: 45px;
+      background: #F7F7F7;
+      color: #216189;
+      width: 40px;
+    }
+
+    .container .form .left .items p{
+      padding: 20px;
+      font-size: 15px;
+    }
+
+    .container .form .right{
+      margin: 20px 0;
+    }
+
+    
+
+    .container .form .right form{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container .form .right .bla{
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      padding: 10px;
+      background: #F7F7F7;
+      font-size: 20px;
+    }
+
+    .container .form .right .bla label{
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .right button{
+      width: 150px;
+      padding: 15px;
+      margin: 10px auto;
+      color: white;
+      background: #F7872B;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input[type=text]{
+    width: 500px;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=email]{
+    
+    width: 500px;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea{
+  height: 100px;
+  width: 500px;
+  border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px 10px;
+}
+
+.maps{
+  margin-top: 60px;
+}
+
+     @media (max-width: 900px){
+      
+
+      .navigation{
+        visibility: hidden;
+        z-index: 999;
+        position: absolute;
+        width: 50%;
+        opacity: 0;
+      }
+
+
+      .container{
+        width: 100%;
+      }
+
+      .mobile-toggle i{
+        display: block;
+       
+      }
+
+      .container .form{
+        flex-direction: column;
+      }
+
+      }
+    }
+
+  </style>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+      <div class="logo">
+        <img src="logo1.png">
+        <h2 style="color: white;">LINTEND</h2>
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="projects.html">PRODUCTS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="gallery.html">LIFE AT LINTEND</a></li>
+          <li style="border-left: 1px solid #f79100;"><a href="#" style=" color: #f79100;">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy;2018. All Rights Reserved.</p>
+        <p>Designed by <span>Lintend</span> </p>
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-toggle">
+      <i class="fas fa-bars" onclick="mobNav()"></i>
+    </div>  
+
+    <div class="container">
+      <div class="inner">
+        <div class="header">
+          <p>Get In Touch</p>
+          <div class="line"></div>
+        </div>
+
+        <div class="form">
+
+          <div class="left">
+            <div class="items">
+                <i class="far fa-envelope"></i>
+                <p>info@lintend.com</p>
+            </div>
+
+            <div class="items">
+                <i class="far fa-map" style="padding: 15px 20px;"></i>
+                <p>Shantinagar-31<br> Kathmandu, Nepal</p>
+            </div>
+
+            <div class="items">
+                <i class="fas fa-phone"></i>
+                <p>9864994422</p>
+            </div>
+            
+          </div>
+
+          <div class="right">
+            <form>
+              <div class="bla">
+                <label>Name: </label>
+                <input type="text" placeholder="Your Name">
+              </div>
+              <div class="bla">
+                <label>Email: </label>
+                <input type="email" placeholder="Your E-Mail">
+              </div>
+              <div class="bla">
+                <label>Message: </label>
+                <textarea placeholder="Message"></textarea>
+              </div>
+
+              <button>Send Message</button>
+
+            </form>
+          </div>
+
+        </div>
+
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9262248011028!2d85.34220581506167!3d27.688674982799643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191b4df02457%3A0x8de04350dc4dd9b0!2sLintend!5e0!3m2!1sen!2snp!4v1540963389616" width="100%" height="550" frameborder="0" style="border: 1px dotted black" allowfullscreen></iframe>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script>
+        var a = document.getElementsByClassName('navigation')[0];
+
+    function mobNav(){
+      if(a.style.visibility != "visible"){
+      a.style.visibility = "visible";
+      a.style.opacity = 1;
+    }
+      else{
+        a.style.visibility = "hidden";
+        a.style.opacity = 0;
+      }
+    }
+      
+
+    </script>
+
+  </body>
+
+</html>

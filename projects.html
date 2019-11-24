@@ -1,0 +1,449 @@
+<html>
+  <head>
+    <title></title>
+
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .navigation{
+      float: left;
+      padding: 22px 10px;
+      width: 230px;
+      background: #424242;
+      text-align: center;
+      font-family: sans-serif;
+      height: 93vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .navigation .logo img{
+        width: 80px;
+        height: 80px;
+        left: 10px;
+    }
+
+    .navigation .nav-items ul li{
+      list-style: none; 
+      font-size: 13px;
+      font-weight: bolder;
+      padding: 8px 0;
+      border-left: 1px solid transparent;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .navigation .nav-items ul li a{
+      text-decoration: none;
+      color: #848484;
+    }
+
+    .navigation .nav-items ul li:hover{
+      border-left: 1px solid #f79100;
+    }
+
+    .navigation .nav-items ul li a:hover{
+      color: #f78100;
+    }
+
+
+    .navigation .footer{
+      font-size: 12px;
+      color: #848484;
+    }
+
+    .navigation .footer span{
+      color: #216189;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .navigation .footer .social{
+      padding: 20px 0; 
+    }
+
+    .navigation .footer .social i{
+      padding: 5px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .navigation .footer .social i:hover{
+      color: #f79100 !important;
+    }
+
+    .line{
+      width: 50px;
+      height: 3px;
+      background: #f79100;
+      position: relative;
+      padding: 0;
+      margin-top: -5px;
+    }
+
+    .container{
+      position: relative;
+      width: auto;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    .container .back{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      animation: myMove 2s;
+    }
+
+    .container .back img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .container .back #card{
+      width: 500px;
+      height: 180px;
+      background: rgba(247, 145, 0, 0.8); 
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    .container .back .overflowhid{
+      overflow: hidden;
+    }
+
+    .container .back #card p{
+      padding: 10px;
+     
+    }
+
+    .container .back #card button{
+      padding: 10px;
+      margin: 20px;
+      color: white;
+      background: #3A5789;
+      border: none;
+    }
+
+    @keyframes myMove{
+      from {opacity: 0.1;}
+      to {opacity: 1;}
+    }
+
+    .section1{
+      display: flex;
+      margin: 120px 20px;
+      font-family: sans-serif;
+    }
+
+    .section1 .image img{
+      width: 550px;
+      height: 400px;
+    }
+
+    .section1 .content{
+      padding: 0 20px;
+    }
+
+    .section1 section{
+      text-align: justify; 
+      padding: 30px 0;
+      color: #848484;
+    }
+
+    .section1 section p{
+      padding: 10px 0;
+    }
+
+    .content .us{
+      display: flex;
+      justify-content: space-around;
+      padding-left: 10px;
+    }
+
+    .content .us .inner{
+      color: #848484;
+      width: 120px;
+    }
+
+    .content .us .inner hr{
+      width: 125px;
+    }
+
+    .content .us .inner i{
+      font-size: 30px;
+      z-index: 1;
+      position: absolute;
+      margin-top: -15px;
+      margin-left: -28px;
+      color: black;
+    }
+
+    .content .us .inner i:hover{
+      color: #f79100;
+    }
+
+    .content .us .inner p{
+      padding-top: 30px;
+      margin-left: -20px;
+      font-size: 18px;
+      padding-right: 5px;
+    }
+
+    .section2{
+      background-image: url(back2.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      height: 70%;
+      width: 100%;
+      }
+
+    .section2 .container-fluid{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .section2 .container-fluid .inner{
+      margin-top: 150px;
+      text-align: center;
+      color: white;
+    }
+
+    .section2 i{
+      color: white;
+      font-size: 50px;
+    }
+
+    .section2 .container-fluid .inner h1{
+      padding: 20px;
+    }
+
+    .section3{
+      margin: 50px 20px;
+      font-family: sans-serif;
+
+    }
+
+    .section3 .projects{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    .section3 .projects .image-container{
+      height: 200px;
+      margin: 10px 0;
+      position: relative;
+      overflow: hidden;
+      
+    }
+
+    .section3 .projects .image-container img{
+      height: 200px;
+      transition: 0.5s ease;
+    }
+
+    .section3 .projects .image-container .overlay{
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0, 0.7);
+      height: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .section3 .projects .image-container:hover .overlay{
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .section3 .projects .image-container:hover img{
+      transform: scale(1.1);
+    }
+
+    .mobile-toggle{
+      display: none;
+    }
+     
+    @media (max-width: 900px){
+      .container .section{
+        height: 75%;
+      }
+
+      .navigation{         
+        visibility: visible;         
+        z-index: 2;
+        position: absolute;         
+        width: 50%;         
+        opacity: 0;         
+        display: flex; 
+        transition: 0.5s ease;      
+      }
+
+
+      .container{
+        width: 100%;
+      }
+
+      .mobile-toggle i{
+      border: 2px solid black; 
+      background: transparent; 
+      position: absolute; 
+      z-index: 999; 
+      font-size: 20px; 
+      padding: 2px 5px; 
+      cursor: pointer; 
+      margin: 10px; 
+      display: block;
+
+    }
+
+    }
+
+    
+     }
+
+  </style>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+      <div class="logo">
+        <img src="logo1.png">
+        <h2 style="color: white;">LINTEND</h2>
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li style="border-left: 1px solid #f79100;"><a href="#" style="color: #f79100;">PROJECTS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="gallery.html">LIFE AT LINTEND</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy;2018. All Rights Reserved.</p>
+        <p>Designed by <span>Lintend</span> </p>
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-toggle">
+      <i class="fas fa-bars" onclick="mobNav()"></i>
+    </div>
+
+    <div class="container">
+
+    
+
+      <div class="section3">
+          <div class="content">
+              <header>
+                <p style="color: #848484; font-size: 13px;">OUR PRODUCTS</p>
+                <p style="font-size: 20px; font-weight: bold; padding: 10px 0; letter-spacing: 3px;">RECENT PRODUCTS</p>
+                <div class="line"></div>
+              </header>
+              
+              <div class="projects">
+                <div class="image-container">
+                  <img src="project1.jpg">
+                  <div class="overlay">
+                    <p style="font-weight: bold;">Aayo Payo</p>
+                  </div>
+                </div>
+
+                <div class="image-container">
+                  <img src="project2.jpg">
+                  <div class="overlay">
+                    <p style="font-weight: bold;">KGS</p>
+                  </div>
+                </div>
+
+                <div class="image-container">
+                  <img src="project3.jpg">
+                  <div class="overlay">
+                    <p style="font-weight: bold;">Lintend</p>
+                  </div>
+                </div>
+
+                <div class="image-container">
+                  <img src="project4.jpg">
+                  <div class="overlay">
+                    <p style="font-weight: bold;">Restaurant</p>  
+                  </div>
+                </div>
+
+                <div class="image-container">
+                  <img src="project5.jpg">
+                  <div class="overlay">
+                    <p style="font-weight: bold;">Hello World</p>
+                  </div>
+                </div>
+
+                <div class="image-container">
+                  <img src="project6.jpg">
+                  <div class="overlay">
+                    <p style="font-weight: bold;">Life of Awesomeness</p>
+                  </div>
+                </div>
+
+
+              </div>
+
+          </div>
+      </div>
+      
+    </div>
+<script>
+        var a = document.getElementsByClassName('navigation')[0];
+
+    function mobNav(){
+      if(a.style.visibility != "visible"){
+      a.style.visibility = "visible";
+      a.style.opacity = 1;
+    }
+      else{
+        a.style.visibility = "hidden";
+        a.style.opacity = 0;
+      }
+    }
+</script>
+  
+
+  </body>
+
+</html>
